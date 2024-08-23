@@ -18,6 +18,7 @@ const useFetch = (url, initialData) => {
             resp = await statusResp.clone().json();
             return resp;
           } catch (e) {
+            console.log(e);
             resp = await statusResp.text();
             return resp;
           }
